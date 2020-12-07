@@ -1,5 +1,5 @@
 import sys
-from typing import List, Set, Tuple, Dict
+from typing import List
 
 # You'll need to paste numbers to stdin and close it with CTRL-Z
 s = sys.stdin.read()
