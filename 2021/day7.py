@@ -7,10 +7,7 @@ def part1(data):
     list_of_strings = data[0].split(',')
     positions = np.array(list_of_strings, dtype=np.int32)
 
-    median = np.median(positions).astype(np.int32)
-
     candidates = np.arange(0, positions.max())
-    #print(candidates)
 
     lowest_cost = np.inf
     for c in candidates:
@@ -25,10 +22,7 @@ def part2(data):
     list_of_strings = data[0].split(',')
     positions = np.array(list_of_strings, dtype=np.int32)
 
-    median = np.median(positions).astype(np.int32)
-
     candidates = np.arange(0, positions.max())
-    #print(candidates)
 
     lowest_cost = np.inf
     for c in candidates:
@@ -36,7 +30,6 @@ def part2(data):
         fuel_costs = fuel_costs*(fuel_costs+1) // 2
         if sum(fuel_costs) < lowest_cost:
             lowest_cost = sum(fuel_costs)
-            #print(fuel_costs, c)
     
     return lowest_cost
 

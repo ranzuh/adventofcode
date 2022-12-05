@@ -16,11 +16,9 @@ def part1(input):
         else:
             for x in range(min(start[0], end[0]), max(start[0], end[0])+1):
                 print(x)
-    #print(output)
-    #print(Counter(output).values())
+
     values = list(Counter(output).values())
-    #print(sum(1 for i in values if i >= 2))
-    # count intersections
+
     return sum(1 for i in values if i >= 2)
 
 def part2(input):
