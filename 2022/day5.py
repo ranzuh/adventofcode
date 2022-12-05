@@ -1,7 +1,6 @@
 import sys
 import pathlib
 from parse import parse
-import numpy as np
 
 def parse_stacks_and_orders(data):
     # ugh hard coded row and collumn sizes
